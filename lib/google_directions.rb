@@ -73,6 +73,10 @@ class GoogleDirections
     end
   end
 
+  def distance_in_kilometers
+    @status != "OK" ? 0 : (distance.to_f / 1000.0).round(2)
+  end
+
   def public_url
     "http://maps.google.com/maps?saddr=#{transcribe(@origin)}&daddr=#{transcribe(@destination)}&hl=#{@options[:language]}&ie=UTF8"
   end
