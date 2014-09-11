@@ -7,11 +7,12 @@ Get drive time or distance of whole trip
 <pre>
 drive_time_in_minutes = directions.drive_time_in_minutes
 distance_in_miles = directions.distance_in_miles
+distance_in_kilometers = directions.distance_in_kilometers
 </pre>
 
 Get the XML Google returns with every turn, or the API call URL
 <pre>
-xml = directions.xml  
+xml = directions.xml
 xml_call = directions.xml_call
 </pre>
 
